@@ -23,6 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Arbitrarily large z-index because, when used with other libraries that
+   * use z-indexing, the micromodal can be hidden
+   */
+  z-index: 1000;
 }
 
 .modal__container {
